@@ -1,0 +1,44 @@
+/*
+ Theme Name:   Twenty Thirteen Child for slippinjimmy
+ Theme URI:    http://slippinjimmy.ch/twenty-thirteen-child/
+ Description:  Twenty Thirteen Child Theme
+ Author:       Alain Brenzikofer
+ Author URI:   http://slippinjimmy.ch
+ Template:     twentythirteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-thirteen-child
+*/
+
+/*body {
+	background-color: #000;
+}*/
+#main {
+	background-color: #000;
+	color: #CCC
+}
+
+/* Navbar */
+.navbar {
+	background-color: #F6AE28;
+	color: #BC360A
+	margin: 0 auto;
+	max-width: 1600px;
+	width: 100%;
+}
+
+.widget {
+	background-color: #F6AE28;
+	color:#000000;
+	}
+.widget-2 .widget-title {
+	font-weight:bold;
+	}
+
+.sendit {
+	background-color: #C00;
+	border-radius: 0;
+	border:0
+	}
