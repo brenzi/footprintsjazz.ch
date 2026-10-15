@@ -147,6 +147,11 @@ def rewrite_value(attr, val):
 
 for url, (kind, body) in pages.items():
     if kind != "asset":
+        # drop the Google Maps loader: it embeds an API key that must not
+        # be shipped with the static mirror
+        body = re.sub(
+            rb'<script[^>]*maps\.googleapis\.com[^>]*></script>\s*', b"", body
+        )
         body = re.sub(
             rb"""(href|src|srcset)=["\']([^"\']+)["\']""",
             lambda m: (
